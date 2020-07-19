@@ -1,8 +1,255 @@
 // Your variable overrides
-$body-bg: #000;
-$body-color: white;
-$primary: hotpink;
-$font-family-base: Arial;
+$font-family-sans-serif: "Lato", sans-serif;
+$font-family-serif: "Merriweather", serif;
+$font-family-base: $font-family-sans-serif;
+$body-color: #434761;
+$lead-font-size: 1.25rem;
+$lead-font-weight: 300 !default;
+
+$dark: #4c388d;
+$dark2: #4f3c90;
+$highlight: #ec6d50;
+$light: #f3f3f3;
+$lightback: #d6d1ea;
+$secondary: $highlight;
+
+//HTML overrides
+
+h2,
+h3,
+h5 {
+  font-family: $font-family-serif;
+}
+
+// rows, columns, containers
+
+.row.top {
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+#top1 {
+  background-color: $light;
+  background-image: url("/images/manuel-papa.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  text-align: right;
+  padding-top: 15%;
+  padding-right: 50px;
+  padding-bottom: 15%;
+  padding-left: 25px;
+  height: 100vh;
+}
+
+#top2 {
+  background-color: $dark;
+  background-image: url("/images/manuel-papa_sketch.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+
+  color: #fff;
+  padding-top: 15%;
+  padding-right: 25px;
+  padding-bottom: 15%;
+  padding-left: 50px;
+  height: 100vh;
+}
+
+.icons-list {
+  margin: 0px 10px 0px 0px;
+}
+
+.container-padding {
+  padding-top: 50px;
+}
+
+.row-padding {
+  padding-top: 20px;
+}
+
+.col-sm {
+  padding-bottom: 20px !important;
+}
+
+#portfolio {
+  background-color: $dark;
+  padding-bottom: 50px;
+}
+
+// Fonts, Links, Cards, Buttons
+
+a,
+a:focus,
+a:hover {
+  color: $highlight !important;
+}
+
+.heading-dark {
+  color: $dark;
+  font-weight: 900;
+  font-size: 2.5em;
+}
+
+.heading-light {
+  color: $light;
+  font-weight: 900;
+  font-size: 2.5em;
+}
+
+.section-title {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.card-custom {
+  background-color: $light !important;
+  border: 1px solid $light !important;
+  border-radius: 0rem !important;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  height: 170px !important;
+}
+
+#btn-top1 {
+  border-radius: 25px;
+}
+
+#btn-top1:hover {
+  color: $light !important;
+}
+
+#btn-top2 {
+  border-radius: 25px;
+  background-color: $highlight;
+  color: $light !important;
+}
+
+#btn-top2:hover {
+  background-color: $light;
+  color: $highlight !important;
+}
+
+// Resume
+
+.resume-list {
+  list-style: none;
+  margin-left: 20px;
+  padding-left: 42px;
+  border-left: 1px solid $dark;
+  margin-bottom: 50px;
+}
+.resume-list li {
+  margin-bottom: 120px;
+  position: relative;
+}
+.resume-list li:last-child {
+  margin-bottom: 0;
+}
+.resume-list li:after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50px;
+  background: $lightback;
+  top: 30px;
+  left: -50px;
+}
+.resume-list h2 {
+  font-size: 72px;
+  margin-bottom: 10px;
+}
+.resume-list h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $highlight;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+// Base structure
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: -ms-flexbox;
+}
+
+.custom-container {
+  width: 100%;
+  height: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+// Header
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+// Footer
+
+.page-footer {
+  background-color: #000000;
+}
+
+.text-uppercase {
+  color: $light;
+}
+
+.mastfoot {
+  color: rgba(255, 255, 255, 0.5);
+}
 
 // Include all Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";

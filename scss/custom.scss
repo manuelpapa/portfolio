@@ -1,8 +1,170 @@
 // Your variable overrides
-$body-bg: #000;
-$body-color: white;
-$primary: hotpink;
-$font-family-base: Arial;
+$font-family-sans-serif: "Lato", sans-serif;
+$font-family-serif: "Merriweather", serif;
+$font-family-base: $font-family-sans-serif;
+$body-color: #434761;
+$lead-font-size: 1.25rem;
+$lead-font-weight: 300 !default;
+
+// HTML overrides
+
+h2 {
+  font-family: $font-family-serif;
+}
+
+// portfolio colors
+
+$dark: #4c388d;
+$highlight: #ec6d50;
+$light: #f3f3f3;
+
+//my custom classes
+
+.row.top {
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.heading-dark {
+  color: $dark;
+  font-weight: 900;
+  font-size: 2.5em;
+}
+
+.heading-light {
+  color: $light;
+  font-weight: 900;
+  font-size: 2.5em;
+}
+
+.col-sm-6.top1 {
+  background-color: $light;
+  text-align: right;
+  padding-top: 15%;
+  padding-right: 50px;
+  padding-bottom: 15%;
+  padding-left: 25px;
+}
+
+.col-sm-6.top2 {
+  background-color: $dark;
+  background-image: url("/images/manuel-papa_sketch-04-04.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+
+  color: #fff;
+  padding-top: 15%;
+  padding-right: 25px;
+  padding-bottom: 15%;
+  padding-left: 50px;
+}
+
+// former cover.css
+
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 0.05rem solid #fff;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+
+body {
+  display: -ms-flexbox;
+}
+
+.custom-container {
+  width: 100%;
+  height: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: 0.75rem 1.25rem;
+  font-weight: 700;
+}
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, 0.5);
+}
 
 // Include all Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";

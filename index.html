@@ -29,60 +29,222 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
-  <body class>
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">Cover</h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
-          </nav>
+  <body>
+    <header>
+      <!--header left-->
+      <div class="row">
+        <div class="col-sm" id="top1">
+          <h2>Hi, I'm</h2>
+          <h2 class="heading-dark">Manuel Papa</h2>
+          <p class="lead">
+            Art Director & Developer
+          </p>
+          <a
+            class="btn btn-outline-secondary"
+            href="#resume"
+            id="btn-top1"
+            role="button"
+            >Resume</a
+          >
         </div>
-      </header>
-
-      <main role="main" class="inner cover">
-        <div class="container-fluid">
+        <!--header left end-->
+        <!--header right-->
+        <div class="col-sm" id="top2">
+          <h2>get</h2>
+          <h2 class="heading-light">shit done</h2>
+          <p>
+            <a class="icons-list" href="#">
+              <img src="images/git.svg" alt="Git Logo" height="20px" />
+            </a>
+            <a class="icons-list" href="#">
+              <img src="images/instagram.svg" alt="Git Logo" height="15px" />
+            </a>
+            <a class="icons-list" href="#">
+              <img src="images/linkedin.svg" alt="Git Logo" height="15px" />
+            </a>
+            <a class="icons-list" href="#">
+              <img src="images/facebook.svg" alt="Git Logo" height="15px" />
+            </a>
+          </p>
+          <a
+            class="btn btn-outline-secondary"
+            href="#portfolio"
+            id="btn-top2"
+            role="button"
+            >portfolio</a
+          >
+        </div>
+      </div>
+      <!--header right end-->
+    </header>
+    <main>
+      <!-- Resume section start -->
+      <section id="resume">
+        <div class="container">
           <div class="row">
-            <div class="col-top1">
-              <h1 class="cover-heading">Cover your page.</h1>
-              <p class="lead">
-                Cover is a one-page template for building simple and beautiful
-                home pages. Download, edit the text, and add your own fullscreen
-                background photo to make it your own.
-              </p>
-              <p class="lead">
-                <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-              </p>
-            </div>
-            <div class="col-top2">
-              <h1 class="cover-heading">Cover your page.</h1>
-              <p class="lead">
-                Cover is a one-page template for building simple and beautiful
-                home pages. Download, edit the text, and add your own fullscreen
-                background photo to make it your own.
-              </p>
-              <p class="lead">
-                <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-              </p>
+            <div class="col-xl-7 offset-xl-2">
+              <div class="section-title">
+                <h2 class="heading-dark">Resume</h2>
+              </div>
+              <ul class="resume-list">
+                <li>
+                  <h3>05.2020 – 07.2020</h3>
+                  <h5>X, Cologne</h5>
+                  <h4>Bicycle mechanic, Social Media Manager</h4>
+                  <p>Buildup, repair, paint, Social Media concept</p>
+                </li>
+                <li>
+                  <h3>06.2019 – 04.2020</h3>
+                  <h5>X, Cologne</h5>
+                  <h4>Art Director</h4>
+                  <p>
+                    Concept, Web Design, Corporate Design, Illustration,
+                    Artwork, Social Media assets, Motion Design
+                  </p>
+                </li>
+                <li>
+                  <h3>04.2018 – 05.2019</h3>
+                  <h5>manuelpapa</h5>
+                  <h4>Freelancer</h4>
+                  <p>
+                    Concept, Web Design, Corporate Design, Illustration, Social
+                    Media assets, Motion Design
+                  </p>
+                </li>
+                <li>
+                  <h3>09.2016 – 04.2018</h3>
+                  <h5>X, Wiesbaden</h5>
+                  <h4>Creative Director, Projectmanager</h4>
+                  <p>
+                    Concept, Web Design, Corporate Design, Illustration, Artwork
+                  </p>
+                </li>
+                <li>
+                  <h3>11.2013 – 11.2015</h3>
+                  <h5>X, Taunusstein</h5>
+                  <h4>Art Director</h4>
+                  <p>
+                    Concept, Web Design, Corporate Design, Illustration, Motion
+                    Design
+                  </p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </main>
+      </section>
+      <!-- Resume section end -->
 
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>
-            Cover template for
-            <a href="https://getbootstrap.com/">Bootstrap</a>, by
-            <a href="https://twitter.com/mdo">@mdo</a>.
-          </p>
+      <!-- Portfolio section  -->
+      <section id="portfolio">
+        <div class="container container-padding">
+          <h2 class="heading-light">Portfolio</h2>
+          <div class="row row-padding">
+            <div class="col-sm">
+              <div class="card card-custom" style="width: 18rem;">
+                <img
+                  src="/images/portfolio-ader.jpg"
+                  class="card-img-top"
+                  alt="3d architecture"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Illustration</h3>
+                  <p class="card-text">
+                    Concept, 3D Illustration, Corporate Design, Image Brochure
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card card-custom" style="width: 18rem;">
+                <img
+                  src="/images/portfolio-treemate.jpg"
+                  class="card-img-top"
+                  alt="3d architecture"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Product Design</h3>
+                  <p class="card-text">
+                    Concept, 3D Illustration, Corporate Design, Image Brochure
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card card-custom" style="width: 18rem;">
+                <img
+                  src="/images/portfolio-nsf.jpg"
+                  class="card-img-top"
+                  alt="3d architecture"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Artwork</h3>
+                  <p class="card-text">
+                    Concept, Artwork, Corporate Design, Image Brochure
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </footer>
-    </div>
+      </section>
+      <!-- Portfolio section end -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container container-padding">
+        <div class="row">
+          <div class="col-md-6 mt-md-0 mt-3">
+            <h5 class="text-uppercase">Manuel Papa</h5>
+            <p>
+              Let me know if i can help you.
+            </p>
+          </div>
+
+          <hr class="clearfix w-100 d-md-none pb-3" />
+
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Contact</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="tel:+491517433820X">0151 7433820X</a>
+              </li>
+              <li>
+                <a href="mailto:manulito@X.com">manulito@X.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Social</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Git</a>
+              </li>
+              <li>
+                <a href="#!">Instagram</a>
+              </li>
+              <li>
+                <a href="#!">LinkedIn</a>
+              </li>
+              <li>
+                <a href="#!">Facebook</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright:
+        <a href="#"> manuelpapa.com</a>
+      </div>
+      <!-- Footer -->
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

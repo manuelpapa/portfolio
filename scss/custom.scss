@@ -6,23 +6,84 @@ $body-color: #434761;
 $lead-font-size: 1.25rem;
 $lead-font-weight: 300 !default;
 
-// HTML overrides
+$dark: #4c388d;
+$dark2: #4f3c90;
+$highlight: #ec6d50;
+$light: #f3f3f3;
+$lightback: #d6d1ea;
+$secondary: $highlight;
 
-h2 {
+//HTML overrides
+
+h2,
+h3,
+h5 {
   font-family: $font-family-serif;
 }
 
-// portfolio colors
-
-$dark: #4c388d;
-$highlight: #ec6d50;
-$light: #f3f3f3;
-
-//my custom classes
+// rows, columns, containers
 
 .row.top {
   height: 100%;
   flex-wrap: wrap;
+}
+
+#top1 {
+  background-color: $light;
+  background-image: url("/images/manuel-papa.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  text-align: right;
+  padding-top: 15%;
+  padding-right: 50px;
+  padding-bottom: 15%;
+  padding-left: 25px;
+  height: 100vh;
+}
+
+#top2 {
+  background-color: $dark;
+  background-image: url("/images/manuel-papa_sketch.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+
+  color: #fff;
+  padding-top: 15%;
+  padding-right: 25px;
+  padding-bottom: 15%;
+  padding-left: 50px;
+  height: 100vh;
+}
+
+.icons-list {
+  margin: 0px 10px 0px 0px;
+}
+
+.container-padding {
+  padding-top: 50px;
+}
+
+.row-padding {
+  padding-top: 20px;
+}
+
+.col-sm {
+  padding-bottom: 20px !important;
+}
+
+#portfolio {
+  background-color: $dark;
+  padding-bottom: 50px;
+}
+
+// Fonts, Links, Cards, Buttons
+
+a,
+a:focus,
+a:hover {
+  color: $highlight !important;
 }
 
 .heading-dark {
@@ -37,60 +98,89 @@ $light: #f3f3f3;
   font-size: 2.5em;
 }
 
-.col-sm-6.top1 {
+.section-title {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.card-custom {
+  background-color: $light !important;
+  border: 1px solid $light !important;
+  border-radius: 0rem !important;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  height: 170px !important;
+}
+
+#btn-top1 {
+  border-radius: 25px;
+}
+
+#btn-top1:hover {
+  color: $light !important;
+}
+
+#btn-top2 {
+  border-radius: 25px;
+  background-color: $highlight;
+  color: $light !important;
+}
+
+#btn-top2:hover {
   background-color: $light;
-  text-align: right;
-  padding-top: 15%;
-  padding-right: 50px;
-  padding-bottom: 15%;
-  padding-left: 25px;
+  color: $highlight !important;
 }
 
-.col-sm-6.top2 {
-  background-color: $dark;
-  background-image: url("/images/manuel-papa_sketch-04-04.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50%;
+// Resume
 
-  color: #fff;
-  padding-top: 15%;
-  padding-right: 25px;
-  padding-bottom: 15%;
-  padding-left: 50px;
+.resume-list {
+  list-style: none;
+  margin-left: 20px;
+  padding-left: 42px;
+  border-left: 1px solid $dark;
+  margin-bottom: 50px;
+}
+.resume-list li {
+  margin-bottom: 120px;
+  position: relative;
+}
+.resume-list li:last-child {
+  margin-bottom: 0;
+}
+.resume-list li:after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50px;
+  background: $lightback;
+  top: 30px;
+  left: -50px;
+}
+.resume-list h2 {
+  font-size: 72px;
+  margin-bottom: 10px;
+}
+.resume-list h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $highlight;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-// former cover.css
-
-/*
- * Globals
- */
-
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: 0.05rem solid #fff;
-}
-
-/*
- * Base structure
- */
+// Base structure
 
 html,
 body {
   height: 100%;
-  background-color: #333;
+  overflow-x: hidden;
 }
 
 body {
@@ -106,9 +196,8 @@ body {
   margin-left: 0;
 }
 
-/*
- * Header
- */
+// Header
+
 .masthead {
   margin-bottom: 2rem;
 }
@@ -148,20 +237,16 @@ body {
   }
 }
 
-/*
- * Cover
- */
-.cover {
-  padding: 0 1.5rem;
-}
-.cover .btn-lg {
-  padding: 0.75rem 1.25rem;
-  font-weight: 700;
+// Footer
+
+.page-footer {
+  background-color: #000000;
 }
 
-/*
- * Footer
- */
+.text-uppercase {
+  color: $light;
+}
+
 .mastfoot {
   color: rgba(255, 255, 255, 0.5);
 }

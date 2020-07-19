@@ -1,0 +1,8 @@
+// Your variable overrides
+$body-bg: #000;
+$body-color: white;
+$primary: hotpink;
+$font-family-base: Arial;
+
+// Include all Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";

@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch scss:css",
+    "build": "sass scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmachens/bootstrap-intro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmachens/bootstrap-intro/issues"
+  },
+  "homepage": "https://github.com/lmachens/bootstrap-intro#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "sass": "^1.26.10"
+  }
+}
